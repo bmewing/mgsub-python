@@ -10,7 +10,27 @@ dependencies to avoid package bloat when being used.
 
 ## Install it!
 
-I'm still figuring this part out, not ready yet (sorry!)
+You need to have git installed
+
+1. Clone the repo to your loacl machine. Type this in a command promp/terminal
+
+```sh
+git clone https://github.com/bmewing/mgsub-python
+```
+
+2. goto repo directory
+
+```sh
+cd mgsub-python
+```
+
+3. install the module
+
+```sh
+python setup.py install
+```
+
+4. You are all done!
 
 ## Usage
 
