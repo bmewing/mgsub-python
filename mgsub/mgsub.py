@@ -1,5 +1,7 @@
 import re
 import collections
+import numpy
+import matplotlib
 from operator import itemgetter
 
 
@@ -47,4 +49,4 @@ def filter_matches(this, prev):
     e = this[3]
     ps = prev[1]
     pe = prev[3]
-    return ((ps <= s) & (pe >= s)) | ((ps <= e) & (pe >= e))
+    return ((ps >= s) & (pe <= s)) | ((ps >= e) & (pe <= e))
