@@ -3,6 +3,14 @@ from operator import itemgetter
 
 
 def mgsub(string, pattern=[], replacement=[]):
+    if not isinstance(string, str):
+        output = [worker(s, pattern, replacement) for s in string]
+    else:
+        output = worker(string, pattern, replacement)
+    return output
+
+
+def worker(string, pattern=[], replacement=[]):
     matches = []
     for i in range(pattern.__len__()):
         matches.extend(gregexpr(pattern[i], string, i))
