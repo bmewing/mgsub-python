@@ -8,7 +8,7 @@ setup(
     version='0.0.1',
     url='https://github.com/bmewing/mgsub-python',
     download_url='https://github.com/bmewing/mgsub-python.git',
-    author='Peter Yasi',
+    author='Mark Ewing',
     packages=['mgsub'],
     module=['mgsub'],
     description='A safe, multiple, simultaneous string substitution function',
