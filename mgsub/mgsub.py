@@ -1,16 +1,20 @@
 import re
+import collections
 from operator import itemgetter
 
 
-def mgsub(string, pattern=[], replacement=[]):
-    if not isinstance(string, str):
+def mgsub(string, pattern, replacement):
+    assert isinstance(pattern, list), "Input pattern must be a list"
+    assert isinstance(replacement, list), "Input replacement must be a list"
+
+    if not isinstance(string, str) and isinstance(string, collections.Sequence):
         output = [worker(s, pattern, replacement) for s in string]
     else:
         output = worker(string, pattern, replacement)
     return output
 
 
-def worker(string, pattern=[], replacement=[]):
+def worker(string, pattern, replacement):
     matches = []
     for i in range(pattern.__len__()):
         matches.extend(gregexpr(pattern[i], string, i))
@@ -24,7 +28,7 @@ def worker(string, pattern=[], replacement=[]):
         p = pattern[matches[i][0]]
         r = replacement[matches[i][0]]
         pre = string[:s]
-        r0 = re.sub(p,r,string[s:e])
+        r0 = re.sub(p, r, string[s:e])
         end = string[e:]
         string = pre+r0+end
     return string
