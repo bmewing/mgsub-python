@@ -10,7 +10,14 @@ dependencies to avoid package bloat when being used.
 
 ## Install it!
 
-I'm still figuring this part out, not ready yet (sorry!)
+ - Download the source.
+ - Run setup.py to install.
+		 
+
+        python setup.py install
+    
+
+ - Module is now installed in your python env. You can import and start using it!
 
 ## Usage
 
