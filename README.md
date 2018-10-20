@@ -10,6 +10,14 @@ dependencies to avoid package bloat when being used.
 
 ## Install it!
 
+### Easy way with pip
+
+```sh
+pip install mgsub
+```
+
+### Latest development version
+
 You need to have git installed
 
 1. Clone the repo to your loacl machine. Type this in a command promp/terminal
@@ -29,8 +37,6 @@ cd mgsub-python
 ```sh
 python setup.py install
 ```
-
-4. You are all done!
 
 ## Usage
 
