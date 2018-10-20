@@ -46,7 +46,7 @@ def worker(string, pattern, replacement, f):
     for i in range(matches.__len__()-1, -1, -1):
         if any([filter_matches(matches[i], m) for m in matches[:i]]):
             matches.pop(i)
-    print(matches)
+    matches.sort(key=itemgetter(1))
     for i in range(matches.__len__()-1, -1, -1):
         s = matches[i][1]
         e = matches[i][3]

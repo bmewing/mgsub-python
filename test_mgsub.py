@@ -4,7 +4,7 @@ import re
 
 testdata = [
     ("hey, ho", ["hey", "ho"], ["ho", "hey"], 0, "ho, hey"),
-    ("Production Workers, All Other", ["s$", "s([\.\, ]]", ",? All Other$"], ["", "\\1", ""], 0, "Production Workers"),
+    ("Production Workers, All Other", ["s$", "s([\.\, ])", ",? All Other$"], ["", "\\1", ""], 0, "Production Workers"),
     ("Dopazamine and dopaloramide are fake chemicals.", ["dopa", "fake"], ["meta", "real"], re.I, "metazamine and metaloramide are real chemicals."),
     ("Hey, ho", ["hey"], ["tomorrow"], re.I, "tomorrow, ho"),
     ("Dopazamine and dopaloramide are fake chemicals.", ["dopa", "fake"], ["meta", "real"], re.I, "metazamine and metaloramide are real chemicals."),
