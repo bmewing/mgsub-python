@@ -38,7 +38,7 @@ Simply pass in a vector of strings to be modified, a vector of patterns to match
 
 ```python
 from mgsub import mgsub
-mgsub(string,pattern=[],replacement=[])
+mgsub(string, pattern=[], replacement=[], flags=0)
 ```
 
 The pattern to match is supplied first and the replacement vector follows.
@@ -47,9 +47,10 @@ The pattern to match is supplied first and the replacement vector follows.
 mgsub("hey, how are you?",["hey","how","are","you"],["how","are","you","hey"])
 ```
 
-Matches and replacements can still be supplied as regex exressions. Additional arguments can be passed to the `sub`/`gsub`/`gregexpr` family of internal functions.
+Matches and replacements can still be supplied as regex exressions. Flags from `re` can be set to modify how the regex works.
 
 ```python
+import re
 mgsub("Dopazamine is not the same as Dopachloride and is still fake.", 
-      [r'[Dd]opa(.*?mine)',"fake"], ["Meta\\1","real"])
+      [r'[Dd]opa(.*?mine)',"fake"], ["Meta\\1","real"], flags=re.I)
 ```
