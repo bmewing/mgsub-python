@@ -16,6 +16,7 @@ setup(name='mgsub',
       author_email='b.mark@ewingsonline.com',
       url='https://github.com/bmewing/mgsub-python',
       packages=['mgsub'],
+      license='MIT',
       tests_require=['pytest'],
       keywords=['string', 'substitution', 'regex', 'regular expression'],
       classifiers=[
