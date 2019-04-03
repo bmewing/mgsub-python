@@ -6,6 +6,7 @@
 [![Coverage Status](https://img.shields.io/codecov/c/github/bmewing/mgsub-python/master.svg)](https://codecov.io/github/bmewing/mgsub-python?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/afc306e0dc80f77b6653/maintainability)](https://codeclimate.com/github/bmewing/mgsub-python/maintainability)
 [![PyPi version](https://pypip.in/v/mgsub/badge.png)](https://crate.io/packages/mgsub/)
+[![Downloads](https://pepy.tech/badge/mgsub)](https://pepy.tech/project/mgsub)
 
 ## Why do I want this?
 You have a string you want to make substitutions on. You want to make many different substitutions at the same time 
